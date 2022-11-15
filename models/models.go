@@ -40,7 +40,7 @@ type Genre struct {
 
 // - this exclude property from json
 type MovieGenre struct {
-	ID        int       `json:"-"`
+	ID        int       `json:"id"`
 	MovieID   int       `json:"-"`
 	GenreID   int       `json:"-"`
 	Genre     Genre     `json:"genre"`
